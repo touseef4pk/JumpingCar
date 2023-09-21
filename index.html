@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" onclick="jump()">
+<head>
+    <meta charset="UTF-8">
+    <title>Jump Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cargame">
+        <p>Points: <span id="points"></span></p>
+
+        <div id="car" class="car">
+            <div class="body"></div>
+            <div class="roof"></div>
+            <div class="carwindow"></div>
+            <div class="wheel front-wheel"></div>
+            <div class="wheel back-wheel"></div>
+        </div>
+
+
+        <div id="ball"></div>
+
+    </div>
+    <audio id="soundJump">
+        <source src="jump.mp3" type="audio/mpeg">
+      </audio>
+      <audio id="soundDie">
+        <source src="die.mp3" type="audio/mpeg">
+      </audio>
+</body>
+<script src="script.js"></script>
+</html>

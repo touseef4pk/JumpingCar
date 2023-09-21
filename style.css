@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.cargame{
+    width: 700px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: lightgreen;
+    margin: auto;
+   
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; /* Background color of the road */
+}
+
+#car {
+    width: 50px;
+    height: 20px;
+    background-color: #007bff; /* Car body color */
+    border-radius: 5px;
+    position: relative;
+    top: 153px;
+}
+
+.roof {
+    width: 20px;
+    height: 10px;
+    background-color: #007bff; /* Car roof color */
+    border-radius: 10px 10px 0 10px;
+    position: absolute;
+    top: -08px;
+    left: 10px;
+}
+
+.carwindow {
+    width: 15px;
+    height: 10px;
+    background-color: #ffffff; 
+    position: absolute;
+    top: 4px;
+    left: 18px;
+    border-radius: 3px;
+}
+
+.wheel {
+    width: 8px;
+    height: 8px;
+    background-color: #000; 
+    border-radius: 50%;
+    position: absolute;
+    bottom: -8px;
+}
+
+.front-wheel {
+    left: 28px;
+}
+
+.back-wheel {
+    right: 30px;
+}
+
+
+
+.animate{
+    animation: jump 0.3s linear;
+}
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+
+#ball{
+    background-color: blue;
+    width: 20px;
+    height: 20px;
+    position: relative;
+	border-radius: 50%;
+    top: 143px;
+    left: 500px;
+    animation: ball 1s infinite linear;
+}
+@keyframes ball{
+    0%{left: 500px}
+    100%{left: -20px}
+}
+p{
+    text-align: center;
+}
